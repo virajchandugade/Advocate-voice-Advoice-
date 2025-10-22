@@ -1,7 +1,7 @@
 🧾 Advoice
 
 Advoice is a hybrid web and desktop application designed for advocates to assist in drafting legal judgments. The desktop app runs partially offline, requiring internet access only for login and license verification. Once activated, it can be used fully offline on the registered device.
-
+--------------------------------------------------------------------------------------------
 ⚙️ Key Features
 
  AI-Assisted Drafting – Uses speech-to-text models to transcribe and assist in judgment drafting.
@@ -32,7 +32,7 @@ Whisper (speech-to-text), FFmpeg (audio processing), Python-docx (Word file gene
 Transcription Languages:
 Hindi • Marathi • English
 
-
+--------------------------------------------------------------------------------------------
 
 💼 Project Background
 
@@ -61,7 +61,7 @@ Interested in exploring Advoice or testing the desktop version?
 👉 Write to me at: your.email@example.com
 (Key generation is required for each machine.)
 
-
+--------------------------------------------------------------------------------------------
 🚀 Future Improvements
 
 Full-featured mobile application version.
