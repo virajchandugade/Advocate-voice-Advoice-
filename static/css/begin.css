@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Nohemi Bold";
+    src: url(../assets/fonts/Nohemi-Bold.otf);
+  }
+  @font-face {
+    font-family: "Nohemi SemiBold";
+    src: url(../assets/fonts/Nohemi-SemiBold.otf);
+  }
+  @font-face {
+    font-family: "Nohemi Reg";
+    src: url(../assets/fonts/Nohemi-Regular.otf);
+  }
+  @font-face {
+    font-family: "Nohemi Medium";
+    src: url(../assets/fonts/Nohemi-Medium.otf);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100vh;
+    width: 100vw;
+    background-color: white; 
+  }
+  
+  .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 100%; 
+    opacity: 0.9; 
+    z-index: -1;
+  }
+  
+  .logo {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 3%;
+    padding-top: 60px ;
+  }
+  
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 50%;
+    font-size: 40pt;
+    color: #ffff;
+  }
+  .mt-1 {
+    font-family: "Nohemi Bold";
+  }
+  .mt-2 {
+    font-family: "Nohemi Reg";
+  }
+  
+  .sub-text {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 1%;
+    margin-left: 50%;
+    font-family: "Nohemi Medium";
+    color: #ffff;
+  }
+  
+  .key-button {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 50%;
+  }
+  #enter-key {
+    align-items: center;
+    background-color: #ffff;
+    border: #ffff;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-family: "Nohemi SemiBold";
+    cursor: pointer;
+  }
+  
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvocateVoice</title>
+    <link rel="shortcut icon" href="../assets/icons/a.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="../cdn links/jquery-3.7.1.min.js"></script>
+    <script src="../cdn links/pizzip.min.js"></script>
+    <script src="../cdn links/docxtemplater-latest.min.js"></script>
+    <script src="../cdn links/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="../static/assets/icons/Advocate Voice.png" alt="AdvocateVoice Logo" class="main-logo">
+        </div>
+
+
+
+        <div class="button-container">
+            <button onclick="startRecording()" class="btn start-btn">Start Recording</button>
+            <button onclick="pauseRecording()" id="pauseBtn" class="btn pause-btn" disabled>Pause</button>
+            <button onclick="stopRecording()" id="stopBtn" class="btn stop-btn" disabled>Stop</button>
+        </div>
+
+        <p id="status">Click "Start Recording" to begin.</p>
+
+        <h3>Transcribed Text:</h3>
+        <textarea id="transcribedText" placeholder="Your transcribed text will appear here..." spellcheck="true"></textarea>
+
+        <button onclick="saveWord()" class="btn save-btn">💾 Save as Word</button>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

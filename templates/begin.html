@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvocateVoice</title>
+    <!-- Use Flask's static path -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/a.svg') }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/begin.css') }}">
+    <!-- Use CDN for jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <img class="gradient" src="{{ url_for('static', filename='assets/icons/gradient.png') }}">
+    </div>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='assets/icons/Advocate Voice.svg') }}">
+    </div>
+
+    <div class="container">
+        <div class="main-text">
+            <span class="mt-1">Speech/Audio To Text,</span>
+            <span class="mt-2">No More Typing Work!</span>
+        </div>
+        
+        <div class="sub-text">
+            <span class="st1">Take notes using your voice instead of typing.</span>
+            <span class="st2">Amazingly precise, secure, and lightning quick.</span>
+        </div>
+
+        <div class="key-button">
+            <button id="enter-key">Begin</button>
+        </div>
+    </div>
+
+    <script>
+        const enterKey = document.getElementById('enter-key');
+        enterKey.addEventListener('click', function() {
+            window.location.href = "/login";
+        });
+    </script>
+</body>
+</html>

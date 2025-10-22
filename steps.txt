@@ -1,0 +1,33 @@
+Advoice: Speech/Audio-to-Text Application: 
+
+Quick User Guide:
+For the best results, please follow these guidelines:
+
+1. Speaking Pace & Clarity
+Speak clearly at a moderate pace. Avoid speaking too fast or too slow.
+Enunciate your words clearly for better accuracy.
+
+2. Pauses Between Sentences
+Pause briefly (1–2 seconds) between sentences to give the system time to process.
+Avoid long silences during speech to prevent the system from misinterpreting pauses.
+
+3. Minimize Background Noise
+Ensure you’re in a quiet environment and use a high-quality microphone for best results.
+
+4. Speak in Short Segments
+Break long sentences into shorter segments for better transcription.
+Avoid speaking over others or in long continuous speech.
+
+5. Speaking Punctuation
+Speak punctuation explicitly (e.g., "comma", "full stop", "question mark").
+Example: "Hello comma how are you question mark"
+
+6. Handling Errors
+If you notice an error, repeat the unclear words or use the correction interface to fix it.
+
+7. Microphone Placement
+Place the microphone 6–12 inches from your mouth and speak directly into it.
+
+8. Test Before Use
+Start with a few test sentences to check the system's accuracy.
+

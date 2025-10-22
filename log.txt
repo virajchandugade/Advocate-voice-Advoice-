@@ -1,0 +1,4 @@
+Starting ADVOICE... 
+Timestamp: 20-10-2025  1:43:58.26 
+'ADVOICE.exe' is not recognized as an internal or external command,
+operable program or batch file.

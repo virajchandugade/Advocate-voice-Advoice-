@@ -1,0 +1,140 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #07A1F5, #B3E5FC); /* Blue gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Container */
+.container {
+    max-width: 800px; /* Wider container */
+    width: 90%; /* Responsive width */
+    background: white;
+    margin: 20px;
+    padding: 40px; /* Increased padding */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+}
+
+/* Title */
+h1 {
+    font-size: 32px;
+    color: #07A1F5; /* Blue color */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    color: white;
+    background: linear-gradient(135deg, #07A1F5, #0591D9); /* Blue gradient */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #07A1F5, #0591D9);
+}
+
+.pause-btn {
+    background: linear-gradient(135deg, #07A1F5, #0591D9);
+}
+
+.stop-btn {
+    background: linear-gradient(135deg, #07A1F5, #0591D9);
+}
+
+.save-btn {
+    background: linear-gradient(135deg, #07A1F5, #0591D9);
+}
+
+.clear-btn {
+    background: linear-gradient(135deg, #07A1F5, #0591D9);
+}
+
+/* Disabled Button */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #B3E5FC, #81D4FA); /* Lighter blue for disabled state */
+}
+
+/* Status Message */
+#status {
+    font-size: 18px;
+    color: #07A1F5; /* Blue color */
+    margin-top: 20px;
+}
+
+/* Transcription Text Area */
+textarea {
+    width: calc(100% - 30px); /* Adjust width for proper fit */
+    height: 250px;
+    resize: none;
+    overflow-y: auto;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #07A1F5; /* Blue color */
+    scroll-behavior: smooth;
+}
+
+textarea:focus {
+    border-color: #07A1F5; /* Blue border on focus */
+    outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional Hover Effects */
+.btn:hover {
+    background: linear-gradient(135deg, #0591D9, #07A1F5); /* Reverse gradient on hover */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-logo {
+    max-width: 300px; /* Adjust based on your logo size */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}

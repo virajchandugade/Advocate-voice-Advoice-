@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Voice</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/option.css') }}">
+
+    <!-- jQuery (Updated Correct CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom Font -->
+    <style>
+        @font-face {
+            font-family: "Nohemi";
+            src: url("{{ url_for('static', filename='assets/fonts/Nohemi-Bold.otf') }}");
+            font-weight: 600;
+        }
+        @font-face {
+            font-family: "Nohemi 2";
+            src: url("{{ url_for('static', filename='assets/fonts/Nohemi-Regular.otf') }}");
+        }
+
+        body {
+            background-color: #ffffff; /* Full white background */
+            font-family: "Nohemi", sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh; /* Ensure body takes full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .main-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Full height */
+            width: 100%; /* Full width */
+            background-color: #ffffff; /* Full white background */
+        }
+
+        .inner-screen {
+            display: flex;
+            background-color: #07A1F5;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 600px;
+            align-items: center;
+        }
+
+        .leftside, .rightside {
+            flex: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vertline {
+            width: 1px;
+            background-color: #ccc;
+            height: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 80px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-bottom: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        .online_p{
+            font-family: "Nohemi 2", sans-serif;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .offline_p {
+            font-family: "Nohemi 2", sans-serif;
+            font-size: 14px;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-screen">
+        <h1>Welcome</h1>
+        <div class="inner-screen">
+            <div class="leftside">
+                <h2>Online</h2>
+                <a href="https://online-advoice.vercel.app/">
+                    <img src="{{ url_for('static', filename='assets/icons/internet.svg') }}" id="net">
+                </a>
+                <span class="online_p">Transcription in Hindi, Marathi, and Gujarati</span>
+            </div>
+            <div class="vertline"></div>
+            <div class="rightside">
+                <h2>Offline</h2>
+                <img src="{{ url_for('static', filename='assets/icons/nonet.svg') }}" id="nonet">
+                <span class="offline_p">Transcription in English</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to offline page when clicked
+        document.getElementById("nonet").addEventListener("click", function () {
+            window.location.href = "/offline";
+        });
+
+        // Prevent going back to login page
+        window.history.pushState(null, "", window.location.href);
+        window.onpopstate = function () {
+            window.history.pushState(null, "", window.location.href);
+        };
+
+        // Redirect to login page if user is not logged in
+        $(document).ready(function () {
+            if (!localStorage.getItem("username") || !localStorage.getItem("licenseKey")) {
+                window.location.href = "/login";
+            }
+        });
+    </script>
+</body>
+</html>

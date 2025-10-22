@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Nohemi Bold";
+    src: url(../assets/fonts/Nohemi-Bold.otf);
+}
+@font-face {
+    font-family: "Nohemi Reg";
+    src: url(../assets/fonts/Nohemi-Regular.otf);
+}
+@font-face {
+    font-family: "Nohemi Medium";
+    src: url(../assets/fonts/Nohemi-Medium.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100vh;
+    width: 100vw;
+    background-color: white; 
+}
+  
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 100%; 
+    opacity: 0.9; 
+    z-index: -1;
+}
+
+.logo {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 3%;
+    padding-top: 60px ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    margin-top: 15%;
+    transform: scaleX();
+}
+
+.Hello {
+    color: #ffff;
+    font-family: "Nohemi Bold";
+    font-size: 40pt;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-key input {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    /* border-bottom-color: #ffff; */
+    border-color: #ffff;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+#userkey {
+    margin-top: 5%;
+}
+#username::placeholder, input {
+    font-family: "Nohemi Reg";
+    color: #ffff;
+    font-size: 15px;
+}
+#userkey::placeholder, input {
+    font-family: "Nohemi Reg";
+    color: #ffff;
+    font-size: 15px;
+}
+#login {
+    background-color: #ffff;
+    font-family: "Nohemi Medium";
+    border-radius: 30px;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+#p {
+    font-family: "Nohemi Reg";
+    font-size: 17pt;
+}

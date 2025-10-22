@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Voice</title>
+    <!-- Use Flask's static path for CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <!-- Use CDN for jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Use Flask's static path for JS -->
+    <script src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+</head>
+<body>
+    <div>
+        <!-- Use Flask's static path for images -->
+        <img class="gradient" src="{{ url_for('static', filename='assets/icons/gradient.png') }}">
+    </div>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='assets/icons/Advocate Voice.svg') }}">
+    </div>
+
+    <div class="container">
+        <div class="Hello">
+            <span>Hello!</span>
+        </div>
+        <div class="input">
+            <form class="name-key" id="name-key">
+                <input type="text" name="uname" id="username" placeholder="Enter full name" required>
+                <input type="password" name="key" id="userkey" placeholder="Enter key" required>
+                <button id="login" type="submit">Login</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+</body>
+</html>
