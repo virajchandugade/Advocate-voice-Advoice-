@@ -37,7 +37,7 @@ Hindi • Marathi • English
 💼 Project Background
 
 This project was developed as a freelance solution for an advocate’s request to simplify the drafting of legal judgments.
-It includes both a web app and a desktop application (.exe) build, available under the 'downloadables' directory.
+It includes both a web app and a desktop application (.exe) build, available under the Releases.
 
 Installation:
 
