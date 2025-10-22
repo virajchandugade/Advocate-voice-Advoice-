@@ -31,7 +31,7 @@ MEL_FILTERS_PATH = os.path.join(BASE_DIR, "whisper", "assets", "mel_filters.npz"
 
 
 # MongoDB Connection
-MONGO_URI = "mongodb+srv://prakashprm710:ZbrCvUh8uDwDbdEm@cluster0.aovl7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv://user:password.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 try:
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
     db = client["advoice"]
