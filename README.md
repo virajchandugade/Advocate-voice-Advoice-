@@ -37,7 +37,7 @@ Hindi • Marathi • English
 💼 Project Background
 
 This project was developed as a freelance solution for an advocate’s request to simplify the drafting of legal judgments.
-It includes both a web app and a desktop application (.exe) build, available under the downloadables directory.
+It includes both a web app and a desktop application (.exe) build, available under the 'downloadables' directory.
 
 Installation:
 
@@ -58,7 +58,7 @@ Contact me for activation or testing requests.
 📞 Want to Try It?
 
 Interested in exploring Advoice or testing the desktop version?
-👉 Write to me at: your.email@example.com
+👉 Write to me at: virajxchandugade2911@gmail.com
 (Key generation is required for each machine.)
 
 --------------------------------------------------------------------------------------------
